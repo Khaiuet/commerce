@@ -1,0 +1,64 @@
+.wrapper {
+  @apply block lg:hidden;
+  @apply w-full h-[40px];
+}
+.root {
+  @apply fixed top-0 left-0;
+  @apply flex items-center;
+  @apply px-6;
+  @apply w-full h-[40px];
+  @apply shadow-sm bg-white;
+  @apply z-50;
+}
+.logosContainer {
+  @apply w-2/3;
+  @apply mt-[2px];
+}
+.toolbar {
+  @apply w-1/3;
+  @apply flex items-center justify-end;
+  & > li {
+    @apply mx-2;
+  }
+  & button {
+    @apply p-2;
+    @apply focus:ring-1 ring-black;
+  }
+}
+
+.cartIcon {
+  @apply w-12;
+}
+.menuIcon {
+  @apply w-10;
+}
+.menuButton {
+  @apply relative;
+  @apply flex items-center justify-around flex-col;
+  @apply w-[30px] h-[30px];
+  @apply py-5;
+
+  & span {
+    @apply block;
+    @apply bg-text-primary;
+    @apply w-[22px] h-[1px];
+  }
+}
+
+:global(.dark) {
+  & .root {
+    @apply bg-text-primary border-white;
+    & button {
+      @apply ring-white;
+      & svg path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  & .menuButton {
+    & span {
+      @apply bg-primary;
+    }
+  }
+}

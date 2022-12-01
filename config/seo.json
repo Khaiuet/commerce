@@ -1,0 +1,26 @@
+{
+  "title": "LEBLANCSTUDIOS | OFFICIAL WEBSITE",
+  "titleTemplate": "%s - LEBLANCSTUDIOS",
+  "description": "SHOP AND VIEW THE LATEST MENSWEAR AND WOMENSWEAR COLLECTION FROM THE OFFICIAL LEBLANCSTUDIOS WEBSITE",
+  "openGraph": {
+    "title": "LEBLANCSTUDIOS | OFFICIAL WEBSITE",
+    "description": "SHOP AND VIEW THE LATEST MENSWEAR AND WOMENSWEAR COLLECTION FROM THE OFFICIAL LEBLANCSTUDIOS WEBSITE",
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://leblancstudios.com",
+    "site_name": "LEBLANCSTUDIOS",
+    "images": [
+      {
+        "url": "/og-image.jpg",
+        "width": 1200,
+        "height": 630,
+        "alt": "LEBLANCSTUDIOS"
+      }
+    ]
+  },
+  "twitter": {
+    "handle": "@leblancstudios",
+    "site": "@leblancstudios",
+    "cardType": "summary_large_image"
+  }
+}

@@ -1,0 +1,44 @@
+@tailwind base;
+@import './base.css';
+
+@tailwind components;
+@import './components.css';
+
+@tailwind utilities;
+/* @import './utilities.css'; */
+
+/* @layer base { */
+@font-face {
+  font-family: 'Massimo Display';
+  font-weight: 300;
+  src: url('/assets/fonts/MassimoDisplay-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Massimo Display';
+  font-weight: 400;
+  src: url('/assets/fonts/MassimoDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Massimo Display';
+  /* font-weight: 600; */
+  font-weight: 700;
+  src: url('/assets/fonts/MassimoDisplay-Semi.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tungsten';
+  font-weight: 700;
+  src: url('/assets/fonts/Tungsten-Black.otf') format('truetype');
+}
+/* @font-face {
+  font-family: 'Massimo Display';
+  font-weight: 700;
+  src: url('/assets/fonts/MassimoDisplay-Bold.ttf') format('truetype');
+} */
+/* } */
+
+html,
+body {
+  font-family: 'Massimo Display';
+  letter-spacing: 0.07rem;
+  @apply bg-white dark:bg-black dark:text-white;
+}

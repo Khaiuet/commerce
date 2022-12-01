@@ -1,0 +1,16 @@
+.root {
+  @apply absolute top-0 right-0;
+  @apply bg-primary;
+  @apply w-full h-full;
+  @apply z-40;
+}
+
+.cardWrapper {
+  @apply relative h-full;
+}
+
+.closeButton {
+  @apply absolute top-4 right-5;
+  @apply p-1 ring-black hover:ring-1 focus:ring-1;
+  z-index: 1;
+}

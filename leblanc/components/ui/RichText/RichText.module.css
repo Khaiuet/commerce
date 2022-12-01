@@ -1,0 +1,10 @@
+.root {
+  @apply p-8 w-full max-w-7xl pt-20 pb-28;
+  margin: 0 auto;
+  & h1 {
+    @apply font-bold text-xl text-center;
+  }
+  & p {
+    @apply mb-6;
+  }
+}

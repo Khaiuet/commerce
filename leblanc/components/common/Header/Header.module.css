@@ -1,0 +1,144 @@
+.root {
+  @apply w-full pr-12;
+  @apply border-b-[1px] border-black border-solid;
+  @apply hidden lg:block;
+}
+
+.topRow {
+  @apply flex justify-between items-center;
+  @apply w-full px-6 pl-8 pt-10 pb-2 border-b-[1px] border-black border-solid;
+  & .toolbar {
+    @apply flex items-end text-2xl font-bold;
+    & > li:not(first-child) {
+      @apply ml-8;
+    }
+  }
+}
+
+.cartContainer {
+  @apply flex;
+}
+.cartItemsCounter {
+  @apply absolute left-0 bottom-[2px] w-full text-center text-base;
+}
+.totalPrice {
+  @apply ml-4 flex items-end;
+}
+
+.bottomRow {
+  @apply pl-8 pt-6 pb-8;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  @apply font-bold uppercase text-2xl pb-2;
+  @apply flex items-center cursor-default;
+  @apply min-h-[20px];
+  & span {
+    @apply mx-2;
+  }
+  & b {
+    @apply ml-2;
+  }
+}
+
+/* navbar */
+.navbar {
+  @apply flex;
+  @apply w-full;
+}
+
+.position {
+  @apply w-[300px] 2xl:w-[330px] h-[75px];
+  @apply flex items-center justify-center;
+  @apply bg-lbsGreen px-[4.5rem];
+  @apply text-6xl uppercase font-light;
+  @apply border-[1px] border-black border-solid border-r-0;
+  @apply whitespace-nowrap cursor-default;
+  & span {
+    @apply mx-1;
+  }
+}
+
+/* Navigation */
+.navigation {
+  @apply bg-aqua dark:bg-lbsDarkGray;
+  @apply flex flex-col flex-grow justify-between;
+  @apply border-[1px] border-black border-solid;
+}
+
+.navigationTop {
+  @apply w-full flex justify-end uppercase;
+}
+.navigationTopBox {
+  @apply py-4;
+  @apply border-l-[1px] border-b-[1px] border-black border-solid;
+}
+.navigationBottom {
+  @apply pl-10;
+}
+
+.menu {
+  @apply flex px-5 text-lg 2xl:text-2xl;
+  & > li {
+    @apply mx-4;
+    & a {
+      @apply px-1;
+      &:hover {
+        @apply underline;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+}
+.menuTop {
+  & > li {
+    @apply mx-5;
+  }
+}
+.menuBottom {
+  @apply flex-wrap;
+  @apply px-5 pt-[14px] pb-5;
+  & a {
+    word-break: keep-all;
+  }
+}
+
+.archiveLink {
+  @apply mt-[12px] 2xl:mt-[14px] 2xl:mb-[20px] mb-[12px];
+}
+
+.linkActive {
+  @apply underline;
+  text-underline-offset: 2px;
+}
+
+.cartIcon {
+}
+.cartButton {
+  @apply flex font-bold p-1;
+}
+
+/* DARK MODE */
+:global(.dark) {
+  & .topRow {
+    @apply border-white;
+  }
+  & .position {
+    @apply text-text-primary border-white;
+  }
+  & .navigation {
+    @apply bg-lbsDarkGray border-white;
+  }
+  & .navigationTopBox {
+    @apply border-white;
+  }
+  & .cartIcon {
+    & path {
+      stroke: white;
+    }
+  }
+  & .darkModeButton {
+    @apply ring-white;
+  }
+}

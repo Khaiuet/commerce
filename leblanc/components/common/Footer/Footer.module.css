@@ -1,0 +1,95 @@
+.root {
+  @apply flex;
+  @apply lg:border-t-[1px] border-black border-solid;
+  @apply text-text-primary;
+}
+
+.imageContainer {
+  @apply w-7/12;
+  @apply hidden lg:block;
+}
+
+.content {
+  @apply w-full lg:w-5/12 lg:border-l-[1px] lg:border-secondary lg:border-solid;
+  @apply flex flex-col;
+}
+.menuRow {
+  @apply lg:pb-3 flex flex-col justify-between;
+  flex-grow: 0.9;
+}
+.copyRow {
+  @apply border-t-[1px] border-secondary border-solid;
+  @apply hidden lg:block;
+  flex-grow: 3;
+}
+
+/* menu */
+.menu {
+  @apply flex flex-wrap lg:flex-nowrap justify-around;
+  @apply mt-8 lg:mt-14;
+
+  & ul {
+    @apply uppercase;
+  }
+  & li {
+    @apply mb-3 md:mb-4;
+  }
+  & a {
+    @apply text-sm md:text-base;
+    @apply text-primary;
+  }
+}
+
+.logoLBSContainer {
+  @apply px-4;
+  @apply hidden lg:block;
+}
+.logoLBS {
+  @apply ml-auto mb-1;
+}
+
+/* social */
+.social {
+  @apply flex lg:block;
+  @apply w-full lg:w-auto;
+  @apply border-t-[1px] border-secondary border-solid lg:border-0;
+  @apply items-center justify-center;
+  @apply px-2 py-10 lg:p-0;
+  @apply mt-4 lg:mt-0;
+  & li {
+    @apply mb-0 md:mb-4;
+    &:not(:last-child) {
+      @apply mr-5 lg:mr-0;
+    }
+  }
+  & a {
+    @apply text-xs md:text-base;
+    @apply text-primary;
+  }
+}
+
+/* Copyright */
+.copy {
+  @apply px-4 py-7 cursor-default;
+  & p {
+    @apply text-right mb-4 text-lg tracking-widest;
+  }
+}
+.acpLogo {
+  @apply ml-auto;
+}
+
+:global(.dark) {
+  & .root {
+    @apply text-primary-2 border-white;
+  }
+  & .social {
+    @apply border-white;
+  }
+  & .copyRow {
+    @apply border-white;
+  }
+  & .content {
+    @apply lg:border-white;
+  }
+}

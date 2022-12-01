@@ -1,0 +1,20 @@
+.root {
+  @apply absolute text-white z-10 font-bold border-white border-solid;
+  @apply flex flex-col;
+  @apply transition-all duration-300 ease-in;
+  & > span {
+    @apply block w-full tracking-wider;
+    @apply mt-2 md:mt-3;
+  }
+}
+.tooltipLine {
+  @apply inline-block border-t-2  border-solid;
+  border-color: inherit;
+}
+
+.tooltipText {
+  @apply cursor-default whitespace-nowrap;
+  @apply overflow-hidden;
+  @apply h-[12px];
+  @apply text-xs md:text-base;
+}

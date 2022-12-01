@@ -1,0 +1,95 @@
+.root {
+  @apply relative;
+  @apply p-6 pt-10 sm:pt-16 sm:px-24 md:pt-20 md:px-28;
+  &.asCard {
+    @apply p-0 h-full;
+    & .card {
+      @apply flex flex-col;
+      @apply h-full;
+    }
+  }
+}
+
+.card {
+  @apply w-full border-[1px] border-secondary border-solid py-10;
+}
+
+.details {
+  @apply px-10 sm:px-16 md:px-20 2xl:px-24;
+}
+
+.price {
+  @apply font-bold text-2xl mb-4;
+}
+
+.title {
+  @apply text-2xl font-bold mb-4;
+}
+
+.shortDescription {
+  @apply text-xl sm:text-xl 2xl:text-2xl mb-4;
+}
+
+.centerContainer {
+  @apply flex justify-between flex-row-reverse;
+  @apply pt-5;
+}
+
+.bottomContainer {
+  @apply flex items-end justify-between;
+  @apply pb-6;
+}
+
+/* Quantity col */
+
+.quantityCol {
+  @apply flex flex-col justify-end;
+  & > div {
+    @apply flex justify-end;
+  }
+}
+
+.sizeGuideBtn {
+  @apply text-xl;
+}
+
+/* Add to bag and Steal Buttons */
+.buttonsContainer {
+  @apply py-4;
+  @apply select-none;
+}
+.fullButton {
+  @apply w-full py-2;
+  @apply border-t-[1px] border-b-[1px] border-secondary border-solid;
+  @apply text-center text-2xl uppercase;
+  @apply select-none;
+}
+.or {
+  @apply my-5;
+  @apply cursor-default;
+  @apply text-center text-2xl uppercase;
+}
+
+/* Full description row */
+.fullDescription {
+  /* @apply h-full; */
+  @apply px-10 pt-6 pb-1;
+  @apply text-lg sm:text-xl text-justify;
+  & p {
+    @apply mb-4;
+  }
+}
+.scrolbars {
+  & > div {
+    overflow-x: auto !important;
+  }
+}
+
+:global(.dark) {
+  & .fullButton {
+    @apply border-primary;
+  }
+  & .card {
+    @apply border-primary bg-lbsDarkGray;
+  }
+}

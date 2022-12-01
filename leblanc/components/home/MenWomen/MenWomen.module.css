@@ -1,0 +1,44 @@
+.root {
+  @apply flex flex-wrap bg-secondary;
+}
+
+.column {
+  @apply w-full lg:w-1/2;
+}
+.card {
+  @apply relative block h-full;
+  & > div:first-child {
+    /* important to keep image same size */
+    @apply h-full;
+  }
+
+}
+.cardContent {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+.cardHeader {
+  @apply absolute w-full;
+  @apply top-[1.8%] md:top-[4%];
+}
+.cardFooter {
+  @apply absolute bottom-6 md:bottom-12 w-full;
+}
+.headerCaption {
+  @apply inline;
+  @apply border-t-2 border-primary border-solid pt-2 px-4;
+  @apply text-right text-text-secondary uppercase text-xs md:text-sm whitespace-nowrap;
+  width: 357px;
+  max-width: 50%;
+}
+.footerCaption {
+  @apply border-t-2 border-primary border-solid pt-2 md:pt-4;
+  @apply text-right text-text-secondary text-lg uppercase;
+  width: 100px;
+}
+
+.image {
+  transition-property: filter;
+  @apply duration-300 ease-in;
+}
+
+/* Tooltip */

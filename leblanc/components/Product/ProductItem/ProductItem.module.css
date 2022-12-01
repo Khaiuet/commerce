@@ -1,0 +1,102 @@
+.item {
+  @apply relative;
+  @apply w-1/2 lg:w-1/3 relative;
+  @apply select-none;
+  @apply flex lg:block;
+  @apply flex-col;
+
+  /* &:nth-child(3n + 0) {
+    @apply text-white;
+  } */
+  &.asCard {
+    @apply w-full;
+    & .detailsContent {
+      @apply text-red;
+    }
+  }
+}
+
+.imageContainer {
+  @apply w-full h-full;
+  & > div {
+    @apply w-full h-full;
+  }
+  & > img {
+    user-drag: none;
+  }
+}
+
+.details {
+  @apply absolute bottom-1/4 right-0;
+  @apply pr-8;
+  @apply hidden lg:flex flex-col items-end;
+  @apply text-text-primary;
+  &.lightTheme {
+    @apply text-text-secondary;
+    & .squeezeContainer {
+      @apply border-primary;
+    }
+  }
+}
+.detailsContent {
+  @apply flex flex-col text-right;
+  & > span {
+    @apply mb-3;
+  }
+}
+.price {
+  @apply font-semibold;
+}
+.swatchesMobile {
+  @apply lg:hidden;
+  @apply absolute top-1/2 right-4;
+  @apply -translate-y-1/2;
+  & ul > li:last-child > a {
+    @apply mb-0;
+  }
+}
+.squeezeContainer {
+  @apply flex justify-end;
+  @apply w-[132px] pt-2 mt-1 border-t-[1px] border-black border-solid;
+}
+.squeezeButton {
+  @apply text-lbsGreen text-lg;
+  /* @apply font-light; */
+  @apply appearance-none;
+  @apply hover:underline;
+  text-underline-offset: 2px;
+}
+
+.caption {
+  @apply static lg:absolute w-full bottom-2 lg:bottom-6 text-center;
+  @apply text-text-primary;
+  &.lightTheme {
+    @apply text-text-secondary;
+  }
+}
+
+.captionDesktop {
+  @apply hidden lg:block;
+}
+.captionMobile {
+  @apply flex flex-col lg:hidden;
+  @apply justify-center;
+  @apply h-[36px];
+  @apply text-xs md:text-base;
+  @apply px-5 py-0;
+  @apply text-left;
+}
+
+.captionPrice {
+  /* @apply absolute left-0; */
+  @apply font-bold mb-2;
+}
+.captionCommonName {
+  /* @apply pl-3; */
+}
+
+:global(.dark) {
+  & .captionMobile {
+    @apply text-text-secondary;
+  }
+}

@@ -1,0 +1,17 @@
+.root {
+  & .imgContainer {
+    @apply max-w-[1770px] mx-auto;
+  }
+  & .cardImageContent {
+    & p {
+      @apply text-right;
+    }
+  }
+}
+
+.cardsContainer {
+  @apply relative;
+  & .cardOver {
+    @apply absolute top-0 left-[4%];
+  }
+}

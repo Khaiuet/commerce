@@ -1,0 +1,44 @@
+.root {
+  @apply flex;
+  & > div:first-child {
+    @apply w-full lg:w-2/5;
+  }
+  & > div:last-child {
+    @apply w-3/5 hidden lg:block;
+  }
+}
+.leftImage {
+  @apply w-full;
+}
+.imageLink {
+  @apply block w-full h-full;
+}
+
+.bgContainer {
+  @apply w-full h-full;
+  & > div {
+    @apply w-full h-full;
+  }
+}
+
+.rte {
+  @apply p-8 md:p-16 bg-lbsGreen;
+  @apply border-b-[1px] border-black border-solid;
+  & > p {
+    @apply text-text-primary text-lg md:text-2xl pb-10 tracking-widest;
+  }
+}
+
+.rightCol {
+  @apply relative;
+}
+
+.productCardContainer {
+  @apply absolute bottom-0 left-0;
+  @apply w-[520px];
+  z-index: 1;
+}
+
+.textxGusPena {
+  @apply max-w-full;
+}

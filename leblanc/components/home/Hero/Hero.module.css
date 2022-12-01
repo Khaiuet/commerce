@@ -1,0 +1,20 @@
+.root {
+  @apply relative w-full bg-secondary;
+  @apply hidden lg:block;
+}
+
+.imageContainer {
+  @apply w-full;
+  & > div {
+    @apply max-w-full;
+  }
+}
+
+.heroContent {
+  @apply absolute w-full px-8 pt-6;
+  z-index: 2;
+}
+
+.logo {
+  @apply h-auto;
+}
